@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-//go:generate rsrc -arch amd64 -manifest app.manifest -o rsrc.syso
+//go:generate rsrc -arch amd64 -manifest app.manifest -o rsrc.syso -ico logo.ico
 func TestNew(t *testing.T) {
 	// 创建托盘
 	tray, err := New(&Options{
